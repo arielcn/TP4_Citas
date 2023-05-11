@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ul className='lista-citas'>
+      <Card mascota="Nina" duenio="Martin" fecha="2021-08-05" hora="08:20" sintomas="Le duele la pierna"/>
+      <Card mascota="Sifon" duenio="Flecha" fecha="2023-08-05" hora="09:24" sintomas="Duerme mucho"/>
+      <Card mascota="Floki" duenio="Ari" fecha="2023-08-05" hora="16:15" sintomas="No está comiendo"/>
+    </ul>
   );
 }
 
