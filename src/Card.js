@@ -1,4 +1,5 @@
 import React from "react";
+import './Card.css';
 
 function Card(props) {
     return (
@@ -7,7 +8,7 @@ function Card(props) {
             <p>Dueño: <span>{props.duenio}</span></p>
             <p>Fecha: <span>{props.fecha}</span></p>
             <p>Hora: <span>{props.hora}</span></p>
-            <p>Sintomas: <span>{props.sintomas}</span></p><button class="button elimnar u-full-width">Eliminar ×</button>
+            <p>Sintomas: <span>{props.sintomas}</span></p><button class="button eliminar u-full-width">Eliminar ×</button>
         </div>);
 }
 
