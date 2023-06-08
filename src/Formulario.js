@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import './Formulario.css';
 
 const Formulario = ({getCitas, setCitas}) => {
+    const random = () => Math.random().toString(36).slice(2);
     const agregarMascota = (e) =>{
         let citas = getCitas();
         e.preventDefault();
@@ -9,6 +10,7 @@ const Formulario = ({getCitas, setCitas}) => {
         [
             ...citas,
             {
+                id : random(),
                 mascota : e.target.mascota.value,
                 propietario : e.target.propietario.value,
                 fecha : e.target.fecha.value,
